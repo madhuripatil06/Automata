@@ -25,8 +25,8 @@
       <file leaf-file-name="GeneratorTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GeneratorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="267">
+              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -35,8 +35,8 @@
       <file leaf-file-name="Generator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Generator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="147">
+              <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -45,8 +45,8 @@
       <file leaf-file-name="InPutValue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/InPutValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="294">
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -149,7 +149,7 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.GeneratorTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0">
+  <component name="RunManager" selected="JUnit.GeneratorTest">
     <configuration default="false" name="GeneratorTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="DFA" />
@@ -159,6 +159,27 @@
       <option name="MAIN_CLASS_NAME" value="GeneratorTest" />
       <option name="METHOD_NAME" value="DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="GeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="DFA" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GeneratorTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -405,12 +426,14 @@
       <listeners />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JUnit.GeneratorTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.GeneratorTest" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.GeneratorTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.GeneratorTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.GeneratorTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" />
       </list>
     </recent_temporary>
   </component>
@@ -428,6 +451,12 @@
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="GeneratorTest - 2016.10.12 at 13h 28m 31s.xml">
+      <configuration name="GeneratorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GeneratorTest - 2016.10.12 at 13h 29m 54s.xml">
+      <configuration name="GeneratorTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="GeneratorTest_DFAMachineShouldPassForAll1sAndFailIfThereIsAny0 - 2016.10.12 at 13h 21m 56s.xml">
       <configuration name="GeneratorTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" configurationId="JUnit" />
     </history-entry>
@@ -485,24 +514,24 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/InPutValue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="294">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="147">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GeneratorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="267">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
           <folding />
         </state>
       </provider>

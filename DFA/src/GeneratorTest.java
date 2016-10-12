@@ -23,14 +23,12 @@ public class GeneratorTest {
         String[] finalState = new String[1];
         finalState[0] = "Q1";
 
-        String[] initialState = new String[1];
-        initialState[0] = "Q1";
+        String initialState = "Q1";
 
         InPutValue inputValue = new InPutValue(alphabets, states, transitiontable, finalState, initialState);
         Generator generator = new Generator(inputValue);
         assertTrue(generator.run("1111111"));
         assertFalse(generator.run("1101111"));
-
     }
 
 }

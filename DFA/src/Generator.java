@@ -7,7 +7,7 @@ public class Generator {
 
     public Boolean run(String input){
         String[] inputs = input.split("");
-        String currentState = inputValue.initalstate[0];
+        String currentState = inputValue.initalstate;
         for (String alphabet : inputs) {
             currentState = inputValue.transitions.get(currentState).get(alphabet);
         }

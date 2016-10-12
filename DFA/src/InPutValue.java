@@ -6,9 +6,9 @@ public class InPutValue {
     public final String[] states;
     public final HashMap<String ,Map<String, String>> transitions;
     public final String[] finalstate;
-    public final String[] initalstate;
+    public final String initalstate;
 
-    public InPutValue(String[] alphabets, String [] states, HashMap transitions, String [] finalstate, String [] initalstate) {
+    public InPutValue(String[] alphabets, String [] states, HashMap transitions, String [] finalstate, String initalstate) {
         this.alphabets = alphabets;
         this.states = states;
         this.transitions = transitions;
