@@ -1,6 +1,4 @@
-import org.junit.Assert;
 import org.junit.Test;
-import src.InPutValue;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,10 +10,8 @@ public class GeneratorTest {
     @Test
     public void DFAMachineShouldPassForAll1sAndFailIfThereIsAny0(){
         HashMap<String, Map<String, String>>transitiontable = new HashMap<>();
-        transitiontable.put("Q1", new HashMap(){{put("0","Q2");}});
-        transitiontable.put("Q1", new HashMap(){{put("1","Q1");}});
-        transitiontable.put("Q2", new HashMap(){{put("0","Q2");}});
-        transitiontable.put("Q2", new HashMap(){{put("1","Q2");}});
+        transitiontable.put("Q1", new HashMap(){{put("0","Q2"); put("1","Q1");}});
+        transitiontable.put("Q2", new HashMap(){{put("0","Q2"); put("1","Q2");}});
         String[] alphabets = new String[2];
         alphabets[0] = "1";
         alphabets[1] = "0";
