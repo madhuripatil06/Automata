@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Automata">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/DFA/src" />
+      <root url="file://$PROJECT_DIR$/DFA/tests" />
+    </SOURCES>
+  </library>
+</component>
