@@ -11,6 +11,10 @@ public class Generator {
         for (String alphabet : inputs) {
             currentState = inputValue.transitions.get(currentState).get(alphabet);
         }
-        return currentState == inputValue.finalstate[0];
+        for (String finalState : inputValue.finalstate) {
+            if(finalState == currentState)
+                return true;
+        }
+        return false;
     }
 }

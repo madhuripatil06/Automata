@@ -29,8 +29,7 @@ public class GeneratorTest {
         InPutValue inputValue = new InPutValue(alphabets, states, transitiontable, finalState, initialState);
         Generator generator = new Generator(inputValue);
         assertTrue(generator.run("1111111"));
-        System.out.println(generator.run("1101111"));
-//        assertFalse(generator.run("1101111"));
+        assertFalse(generator.run("1101111"));
 
     }
 
