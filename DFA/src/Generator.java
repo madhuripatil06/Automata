@@ -1,18 +1,26 @@
 public class Generator {
-    private InPutValue inputValue;
+    private final String[] alphabets;
+    private final String[] states;
+    private final String[] finalstate;
+    private final String initalstate;
+    private final Transitions transitions;
 
-    public Generator(InPutValue inputValue) {
-        this.inputValue = inputValue;
+    public Generator(String[] alphabets, String [] states, String[] transitions, String [] finalstate, String initalstate) {
+        this.alphabets = alphabets;
+        this.states = states;
+        this.transitions = new Transitions(transitions);
+        this.finalstate = finalstate;
+        this.initalstate = initalstate;
     }
 
     public Boolean run(String input){
         String[] inputs = input.split("");
-        String currentState = inputValue.initalstate;
+        String currentState = this.initalstate;
         for (String alphabet : inputs) {
-            currentState = inputValue.transitions.get(currentState).get(alphabet);
+            currentState = this.transitions.tranitionFor(currentState, alphabet);
         }
-        for (String finalState : inputValue.finalstate) {
-            if(finalState == currentState)
+        for (String finalState : this.finalstate) {
+            if(finalState.equals(currentState))
                 return true;
         }
         return false;
