@@ -14,10 +14,9 @@ public class GeneratorTest {
         String[] finalState = {"Q1"};
         String initialState = "Q1";
         String[] transitiontable = {"Q1,0,Q2", "Q1,1,Q1", "Q2,0,Q2", "Q2,1,Q2"};
-        Generator generator = new Generator(alphabets, states, transitiontable, finalState, initialState);
-        assertTrue(generator.run("1111111"));
-        assertFalse(generator.run("1101111"));
-        assertFalse(generator.run("110a111"));
+        Generator dfa = new DFAGenerator(alphabets, states, transitiontable, finalState, initialState).generate();
+        assertTrue(dfa.run("1111111"));
+        assertFalse(dfa.run("1101111"));
+        assertFalse(dfa.run("110a111"));
     }
-
 }

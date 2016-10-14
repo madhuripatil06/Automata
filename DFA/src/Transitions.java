@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Transitions {
-    private HashMap<String, Map<String, String>> transitions = new HashMap<String, Map<String, String>>();
+    private HashMap<State, Map<String, State>> transitions = new HashMap<State, Map<String, State>>();
 
     public Transitions(String[] rawTransitions) {
         this.createTransitions(rawTransitions);
@@ -16,20 +16,22 @@ public class Transitions {
 
     private Boolean addTransition(String transitionExp){
         String[] transitionParts = transitionExp.split(",");
+        State from = new State(transitionParts[0]);
+        State to = new State(transitionParts[2]);
         if(transitionParts.length != 3)
             return false;
-        if(transitions.get(transitionParts[0]) != null)
-            transitions.get(transitionParts[0]).put(transitionParts[1], transitionParts[2]);
+        if(transitions.get(from) != null)
+            transitions.get(from).put(transitionParts[1], to);
         else{
             HashMap transition = new HashMap() {{
-                put(transitionParts[1], transitionParts[2]);
+                put(transitionParts[1], to);
             }};
-            transitions.put(transitionParts[0], transition);
+            transitions.put(from, transition);
         }
         return true;
     };
 
-    public String tranitionFor(String currentState, String alphabet) {
+    public State tranitionFor(State currentState, String alphabet) {
         return this.transitions.get(currentState).get(alphabet);
     }
 

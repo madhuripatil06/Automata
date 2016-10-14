@@ -1,23 +1,24 @@
 import java.util.Arrays;
 
 public class Generator {
-    private final String[] alphabets;
-    private final String[] states;
-    private final String[] finalstate;
-    private final String initalstate;
-    private final Transitions transitions;
 
-    public Generator(String[] alphabets, String [] states, String[] transitions, String [] finalstate, String initalstate) {
+    private final String[] alphabets;
+    private final State[] states;
+    private final Transitions transitions;
+    private final State[] finalstate;
+    private final State initalstate;
+
+    public Generator(String[] alphabets, State[] states, Transitions transitions, State[] finalstate, State initalstate) {
         this.alphabets = alphabets;
         this.states = states;
-        this.transitions = new Transitions(transitions);
+        this.transitions = transitions;
         this.finalstate = finalstate;
         this.initalstate = initalstate;
     }
 
     public Boolean run(String input){
         String[] inputs = input.split("");
-        String currentState = this.initalstate;
+        State currentState = this.initalstate;
         for (String alphabet : inputs) {
             if(Arrays.asList(this.alphabets).indexOf(alphabet) == -1)
                 return false;
@@ -26,8 +27,8 @@ public class Generator {
         return isStringPassed(currentState);
     }
 
-    private Boolean isStringPassed(String currentState) {
-        for (String finalState : this.finalstate) {
+    private Boolean isStringPassed(State currentState) {
+        for (State finalState : this.finalstate) {
             if(finalState.equals(currentState))
                 return true;
         }
