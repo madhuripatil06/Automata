@@ -22,21 +22,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GeneratorTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GeneratorTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/GeneratorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Generator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Generator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Generator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="645">
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -161,6 +161,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -469,9 +470,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GeneratorTest_DFAMachineShouldPassForAll1sAndFailIfThereIsAny0 - 2016.10.14 at 12h 35m 16s.xml">
-      <configuration name="GeneratorTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GeneratorTest_DFAMachineShouldPassForAll1sAndFailIfThereIsAny0 - 2016.10.14 at 12h 37m 04s.xml">
       <configuration name="GeneratorTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" configurationId="JUnit" />
     </history-entry>
@@ -497,6 +495,9 @@
       <configuration name="GeneratorTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" configurationId="JUnit" />
     </history-entry>
     <history-entry file="GeneratorTest_DFAMachineShouldPassForAll1sAndFailIfThereIsAny0 - 2016.10.14 at 12h 39m 30s.xml">
+      <configuration name="GeneratorTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GeneratorTest_DFAMachineShouldPassForAll1sAndFailIfThereIsAny0 - 2016.10.14 at 12h 42m 36s.xml">
       <configuration name="GeneratorTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -563,18 +564,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/GeneratorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="645">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Generator.java">
+    <entry file="file://$PROJECT_DIR$/tests/GeneratorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding />
         </state>
       </provider>

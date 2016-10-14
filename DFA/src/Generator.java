@@ -23,20 +23,14 @@ public class Generator {
                 return false;
             currentState = this.transitions.tranitionFor(currentState, alphabet);
         }
+        return isStringPassed(currentState);
+    }
+
+    private Boolean isStringPassed(String currentState) {
         for (String finalState : this.finalstate) {
             if(finalState.equals(currentState))
                 return true;
         }
         return false;
-    }
-
-    public static Generator create(String[] alphabets, String [] states, String[] transitions, String [] finalstate, String initalstate){
-        Generator result = null;
-        try{
-            return new Generator(alphabets, states, transitions, finalstate, initalstate);
-        }
-        catch (Exception ex){
-            return null;
-        }
     }
 }
