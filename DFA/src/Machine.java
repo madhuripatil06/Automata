@@ -1,14 +1,13 @@
 import java.util.Arrays;
 
-public class Generator {
-
+public class Machine {
     private final String[] alphabets;
     private final State[] states;
     private final Transitions transitions;
     private final State[] finalstate;
     private final State initalstate;
 
-    public Generator(String[] alphabets, State[] states, Transitions transitions, State[] finalstate, State initalstate) {
+    public Machine(String[] alphabets, State[] states, Transitions transitions, State[] finalstate, State initalstate) {
         this.alphabets = alphabets;
         this.states = states;
         this.transitions = transitions;

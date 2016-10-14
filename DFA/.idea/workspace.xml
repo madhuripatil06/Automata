@@ -22,21 +22,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GeneratorTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/GeneratorTest.java">
+      <file leaf-file-name="MachineTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/MachineTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="84">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Generator.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Generator.java">
+      <file leaf-file-name="Machine.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Machine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="-279">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -45,7 +45,7 @@
       <file leaf-file-name="Transitions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Transitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
+            <state relative-caret-position="672">
               <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -58,8 +58,8 @@
       <file leaf-file-name="DFAGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DFAGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="159" selection-start-line="16" selection-start-column="159" selection-end-line="16" selection-end-column="159" />
+            <state relative-caret-position="231">
+              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -107,11 +107,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/GeneratorTest.java" />
         <option value="$PROJECT_DIR$/src/InPutValue.java" />
-        <option value="$PROJECT_DIR$/src/Generator.java" />
         <option value="$PROJECT_DIR$/src/DFAGenerator.java" />
         <option value="$PROJECT_DIR$/src/Transitions.java" />
         <option value="$PROJECT_DIR$/src/State.java" />
+        <option value="$PROJECT_DIR$/src/Generator.java" />
+        <option value="$PROJECT_DIR$/src/Machine.java" />
         <option value="$PROJECT_DIR$/tests/GeneratorTest.java" />
+        <option value="$PROJECT_DIR$/tests/MachineTest.java" />
       </list>
     </option>
   </component>
@@ -208,14 +210,14 @@
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GeneratorTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0">
-    <configuration default="false" name="GeneratorTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration default="false" name="MachineTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="DFA" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GeneratorTest" />
+      <option name="MAIN_CLASS_NAME" value="MachineTest" />
       <option name="METHOD_NAME" value="DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -230,13 +232,13 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="GeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="MachineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="DFA" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GeneratorTest" />
+      <option name="MAIN_CLASS_NAME" value="MachineTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -486,13 +488,13 @@
       <method />
     </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.GeneratorTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.GeneratorTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MachineTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MachineTest" />
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.GeneratorTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.GeneratorTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MachineTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MachineTest" />
       </list>
     </recent_temporary>
   </component>
@@ -510,9 +512,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GeneratorTest_DFAMachineShouldPassForAll1sAndFailIfThereIsAny0 - 2016.10.14 at 13h 09m 03s.xml">
-      <configuration name="GeneratorTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GeneratorTest_DFAMachineShouldPassForAll1sAndFailIfThereIsAny0 - 2016.10.14 at 13h 09m 29s.xml">
       <configuration name="GeneratorTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" configurationId="JUnit" />
     </history-entry>
@@ -540,6 +539,9 @@
     <history-entry file="GeneratorTest_DFAMachineShouldPassForAll1sAndFailIfThereIsAny0 - 2016.10.14 at 13h 15m 54s.xml">
       <configuration name="GeneratorTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MachineTest_DFAMachineShouldPassForAll1sAndFailIfThereIsAny0 - 2016.10.14 at 13h 19m 05s.xml">
+      <configuration name="MachineTest.DFAMachineShouldPassForAll1sAndFailIfThereIsAny0" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="947" extended-state="6" />
@@ -553,7 +555,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -609,17 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Transitions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#148#175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/State.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -633,26 +624,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Machine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-279">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DFAGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="159" selection-start-line="16" selection-start-column="159" selection-end-line="16" selection-end-column="159" />
+        <state relative-caret-position="231">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/GeneratorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Transitions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="672">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#148#175#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Generator.java">
+    <entry file="file://$PROJECT_DIR$/tests/MachineTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="84">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
           <folding />
         </state>
       </provider>
