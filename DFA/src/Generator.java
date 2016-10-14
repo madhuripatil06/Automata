@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Generator {
     private final String[] alphabets;
     private final String[] states;
@@ -17,6 +19,8 @@ public class Generator {
         String[] inputs = input.split("");
         String currentState = this.initalstate;
         for (String alphabet : inputs) {
+            if(Arrays.asList(this.alphabets).indexOf(alphabet) == -1)
+                return false;
             currentState = this.transitions.tranitionFor(currentState, alphabet);
         }
         for (String finalState : this.finalstate) {
@@ -24,5 +28,15 @@ public class Generator {
                 return true;
         }
         return false;
+    }
+
+    public static Generator create(String[] alphabets, String [] states, String[] transitions, String [] finalstate, String initalstate){
+        Generator result = null;
+        try{
+            return new Generator(alphabets, states, transitions, finalstate, initalstate);
+        }
+        catch (Exception ex){
+            return null;
+        }
     }
 }
