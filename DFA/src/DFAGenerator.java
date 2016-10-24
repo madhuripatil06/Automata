@@ -1,11 +1,11 @@
 public class DFAGenerator {
     private final String[] alphabets;
     private final String[] states;
-    private final String[] transitions;
+    private final Object[] transitions;
     private final String[] finalstate;
     private final String initalstate;
 
-    public DFAGenerator(String[] alphabets, String [] states, String[] transitions, String [] finalstate, String initalstate) {
+    public DFAGenerator(String[] alphabets, String [] states, Object[] transitions, String [] finalstate, String initalstate) {
         this.alphabets = alphabets;
         this.states = states;
         this.transitions = transitions;

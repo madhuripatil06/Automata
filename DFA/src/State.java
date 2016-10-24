@@ -1,10 +1,10 @@
 import java.util.Objects;
 
 public class State {
-    private String name;
+    public String name;
 
     public State(String name) {
-        this.name = name;
+        this.name = name.trim();
     }
 
     @Override
