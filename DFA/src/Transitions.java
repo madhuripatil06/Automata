@@ -18,8 +18,6 @@ public class Transitions {
         State from = new State(transitionParts[0]);
         String alphabet = transitionParts[1].trim();
         State to = new State(transitionParts[2]);
-        if(transitionParts.length != 3)
-            return false;
         if(transitions.get(from) != null)
             transitions.get(from).put(alphabet, to);
         else{

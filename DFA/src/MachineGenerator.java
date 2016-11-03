@@ -11,15 +11,13 @@ public class MachineGenerator {
         HashMap<String, Object>[] result = new HashMap[parse.size()];
         for(int i = 0 ; i < parse.size() ; i++){
             JSONObject jsonObject = (JSONObject) parse.get(i);
-            JSONObject tuple = (JSONObject) jsonObject.get("tuple");
-            DFA DFA = generateMachine(tuple);
-            JSONArray passCases = (JSONArray) jsonObject.get("pass-cases");
-            JSONArray failCases = (JSONArray) jsonObject.get("fail-cases");
-            HashMap<String, Object> current = new HashMap<>();
-            current.put("passingCases", passCases.toArray());
-            current.put("failingCases", failCases.toArray());
-            current.put("DFA", DFA);
-            result[i] = current;
+            DFA DFA = generateMachine((JSONObject) jsonObject.get("tuple"));
+            Object[] passCases = ((JSONArray) jsonObject.get("pass-cases")).toArray();
+            Object[] failCases = ((JSONArray) jsonObject.get("fail-cases")).toArray();
+            result[i] = new HashMap<>();
+            result[i].put("passingCases", passCases);
+            result[i].put("failingCases", failCases);
+            result[i].put("DFA", DFA);
         }
         return result;
     }
