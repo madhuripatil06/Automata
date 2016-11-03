@@ -11,24 +11,26 @@ public class MachineGenerator {
         HashMap<String, Object>[] result = new HashMap[parse.size()];
         for(int i = 0 ; i < parse.size() ; i++){
             JSONObject jsonObject = (JSONObject) parse.get(i);
-            DFA DFA = generateMachine((JSONObject) jsonObject.get("tuple"));
+            Machine machine = generateMachine((JSONObject) jsonObject.get("tuple"), (String) jsonObject.get("type"));
             Object[] passCases = ((JSONArray) jsonObject.get("pass-cases")).toArray();
             Object[] failCases = ((JSONArray) jsonObject.get("fail-cases")).toArray();
             result[i] = new HashMap<>();
             result[i].put("passingCases", passCases);
             result[i].put("failingCases", failCases);
-            result[i].put("DFA", DFA);
+            result[i].put("machine", machine);
         }
         return result;
     }
 
-    private DFA generateMachine(JSONObject tuple) {
+    private Machine generateMachine(JSONObject tuple, String type) {
         String[] alphabetSets = createSet((JSONArray) tuple.get("alphabets"));
         String[] states = createSet((JSONArray) tuple.get("states"));
         String[] finalStates = createSet((JSONArray) tuple.get("final-states"));
         String initialState = (String) tuple.get("start-state");
         Object [] transitions = createTransitions((JSONObject) tuple.get("delta"));
-        return new DFAGenerator(alphabetSets, states, transitions, finalStates, initialState).generate();
+        if(type.equals("dfa"))
+            return new DFAGenerator(alphabetSets, states, transitions, finalStates, initialState).generate();
+        return null;
     }
 
     private Object[] createTransitions(JSONObject delta) {

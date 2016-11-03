@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class DFA {
+public class DFA implements Machine {
     private final String[] alphabets;
     private final State[] states;
     private final Transitions transitions;
