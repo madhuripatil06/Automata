@@ -13,8 +13,8 @@ public class DFAGenerator {
         this.initalstate = initalstate;
     }
 
-    public Machine generate(){
-        return new Machine(this.alphabets, createStates(this.states), new Transitions(this.transitions), createStates(finalstate),new State(this.initalstate));
+    public DFA generate(){
+        return new DFA(this.alphabets, createStates(this.states), new Transitions(this.transitions), createStates(finalstate),new State(this.initalstate));
     }
 
     private State[] createStates(String[] input) {

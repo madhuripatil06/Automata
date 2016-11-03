@@ -1,13 +1,13 @@
 import java.util.Arrays;
 
-public class Machine {
+public class DFA {
     private final String[] alphabets;
     private final State[] states;
     private final Transitions transitions;
     private final State[] finalstate;
     private final State initalstate;
 
-    public Machine(String[] alphabets, State[] states, Transitions transitions, State[] finalstate, State initalstate) {
+    public DFA(String[] alphabets, State[] states, Transitions transitions, State[] finalstate, State initalstate) {
         this.alphabets = alphabets;
         this.states = states;
         this.transitions = transitions;
@@ -19,11 +19,15 @@ public class Machine {
         String[] inputs = input.split("");
         State currentState = this.initalstate;
         for (String alphabet : inputs) {
-            if(Arrays.asList(this.alphabets).indexOf(alphabet) == -1)
+            if(isAlphabetValid(alphabet))
                 return false;
             currentState = this.transitions.tranitionFor(currentState, alphabet);
         }
         return isStringPassed(currentState);
+    }
+
+    private boolean isAlphabetValid(String alphabet) {
+        return Arrays.asList(this.alphabets).indexOf(alphabet) == -1;
     }
 
     private Boolean isStringPassed(State currentState) {

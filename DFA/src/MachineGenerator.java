@@ -3,42 +3,33 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import java.io.FileNotFoundException;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Set;
 
-public class MyJSONFileReader {
-    private String filePath;
+public class MachineGenerator {
+    private Result[] machines;
 
-    public MyJSONFileReader(String FilePath) {
-
-        filePath = FilePath;
+    public MachineGenerator() {
+        this.machines = null;
     }
 
-    public Result[] test() throws IOException, ParseException {
-        JSONParser jsonParser = new JSONParser();
-        Object data = jsonParser.parse(new FileReader("/Users/madhurip/STEP/Automata/DFA/src/examples.json"));
-        String data1 = (String) data;
-        JSONArray parse = (JSONArray) new JSONParser().parse(data1);
-        return parseJSON(parse);
-    }
-
-    private Result[] parseJSON(JSONArray parse) {
-        Result[] results = new Result[parse.size()];
+    public Result[] generate(String fileName) throws IOException, ParseException {
+        JSONArray parse = new JSONFileReader(fileName).parse();
+        machines = new Result[parse.size()];
         for(int i = 0 ; i < parse.size() ; i++){
             JSONObject jsonObject = (JSONObject) parse.get(i);
             JSONObject tuple = (JSONObject) jsonObject.get("tuple");
-            Machine machine = generateMachine(tuple);
+            DFA DFA = generateMachine(tuple);
             JSONArray passCases = (JSONArray) jsonObject.get("pass-cases");
             JSONArray failCases = (JSONArray) jsonObject.get("fail-cases");
-            results[i] = new Result(machine, passCases.toArray(), failCases.toArray());
+            machines[i] = new Result(DFA, passCases.toArray(), failCases.toArray());
         }
-        return results;
+        return machines;
     }
 
-    private Machine generateMachine(JSONObject tuple) {
+    private DFA generateMachine(JSONObject tuple) {
         String[] alphabetSets = createSet((JSONArray) tuple.get("alphabets"));
         String[] states = createSet((JSONArray) tuple.get("states"));
         String[] finalStates = createSet((JSONArray) tuple.get("final-states"));

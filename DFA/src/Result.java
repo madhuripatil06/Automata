@@ -1,10 +1,10 @@
 public class Result {
-    public final Machine machine;
+    public final DFA DFA;
     public final Object[] passingCases;
     public final Object[] failingCases;
 
-    public Result(Machine machine, Object[] passingCases, Object[] failingCases) {
-        this.machine = machine;
+    public Result(DFA DFA, Object[] passingCases, Object[] failingCases) {
+        this.DFA = DFA;
         this.passingCases = passingCases;
         this.failingCases = failingCases;
     }

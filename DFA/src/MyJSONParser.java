@@ -6,7 +6,6 @@ import org.json.simple.parser.ParseException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Set;
 
 public class MyJSONParser {
@@ -44,7 +43,7 @@ public class MyJSONParser {
 
     }
 
-    public Machine generateDFA(JSONObject parsedData){
+    public DFA generateDFA(JSONObject parsedData){
         return null;
     }
 
