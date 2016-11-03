@@ -3,18 +3,20 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.HashMap;
 
 @RunWith(Parameterized.class)
 public class DFATestsRunner {
     private final DFA DFA;
     private final Object[] passing_cases;
     private final Object[] failing_cases;
-    public DFATestsRunner(Result result) {
-        this.DFA = result.DFA;
-        this.passing_cases = result.passingCases;
-        this.failing_cases = result.failingCases;
+    public DFATestsRunner(HashMap result) {
+        this.DFA = (DFA) result.get("DFA");
+        this.passing_cases = (Object[]) result.get("passingCases");
+        this.failing_cases = (Object[]) result.get("failingCases");
     }
     @Test
     public void test() {
@@ -27,6 +29,7 @@ public class DFATestsRunner {
     }
     @Parameterized.Parameters
     public static Iterable data() throws IOException, ParseException {
+        System.out.println(new MachineGenerator().generate("examples.json"));
         return Arrays.asList(new MachineGenerator().generate("examples.json"));
     };
 }

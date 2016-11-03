@@ -1,32 +1,27 @@
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class MachineGenerator {
-    private Result[] machines;
-
-    public MachineGenerator() {
-        this.machines = null;
-    }
-
-    public Result[] generate(String fileName) throws IOException, ParseException {
+    public HashMap[] generate(String fileName) throws IOException, ParseException {
         JSONArray parse = new JSONFileReader(fileName).parse();
-        machines = new Result[parse.size()];
+        HashMap<String, Object>[] result = new HashMap[parse.size()];
         for(int i = 0 ; i < parse.size() ; i++){
             JSONObject jsonObject = (JSONObject) parse.get(i);
             JSONObject tuple = (JSONObject) jsonObject.get("tuple");
             DFA DFA = generateMachine(tuple);
             JSONArray passCases = (JSONArray) jsonObject.get("pass-cases");
             JSONArray failCases = (JSONArray) jsonObject.get("fail-cases");
-            machines[i] = new Result(DFA, passCases.toArray(), failCases.toArray());
+            HashMap<String, Object> current = new HashMap<>();
+            current.put("passingCases", passCases.toArray());
+            current.put("failingCases", failCases.toArray());
+            current.put("DFA", DFA);
+            result[i] = current;
         }
-        return machines;
+        return result;
     }
 
     private DFA generateMachine(JSONObject tuple) {
